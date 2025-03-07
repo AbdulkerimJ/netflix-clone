@@ -1,0 +1,71 @@
+/* Outer container */
+.header-outer-container {
+  background-color: #141414; /* Netflix-style dark background */
+  /* padding: 1rem 0; */
+}
+
+/* Inner container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Left section of the header */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-left li {
+  color: #e5e5e5;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-left li:hover {
+  color: #b3b3b3;
+}
+
+/* Right section of the header */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-right li {
+  color: #e5e5e5;
+  font-size: 1.5rem;  /* Larger font for icon */
+  cursor: pointer;
+}
+
+.header-right li:hover {
+  color: #b3b3b3;
+}
+
+.logo {
+  height: 10vh;
+}
