@@ -1,0 +1,73 @@
+/* Banner.css */
+
+.banner {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.banner-contents {
+  padding-left: 2rem;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner-title {
+  font-size: 4rem;
+}
+
+.banner-buttons {
+  margin-top: 1rem;
+}
+
+.banner-btn {
+  background-color: rgba(0, 0, 0, 0.3);    /* Slightly darker background */
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;                /* Increased padding for better click area */
+  cursor: pointer;
+  margin-right: 1.5rem;                   /* More spacing between buttons */
+  font-size: 1.1rem;                     /* Slightly larger text */
+  border-radius: 4px;                    /* Added subtle rounded corners */
+  transition: all 0.3s ease;             /* Smooth transition for hover effects */
+  font-weight: 500;                      /* Medium font weight for better readability */
+}
+
+/* Hover effect for both buttons */
+.banner-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);    /* Bright white on hover */
+  color: #000;                                   /* Black text on hover */
+}
+
+/* Specific styling for Play button*/
+.banner-btn.play-btn {
+  background-color: rgba(255, 255, 255, 0.95);   /* White background for Play */
+  color: #000;                                   /* Black text */
+}
+
+.banner-btn.play-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);          /* Dark background on hover */
+  color: #fff;                                   /* White text on hover */
+}
+
+.banner-description {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+}

@@ -5,7 +5,6 @@
 }
 
 .footer_inner_container {
-  /* display: flex; */
   justify-content: space-between;
   align-items: flex-start;
   max-width: 80%;
